@@ -43,17 +43,27 @@ printf("A soma de %.2f e %.2f é %.2f\n", num1, num2,soma);
 //6. Faça um programa que leia um número inteiro e imprima o seu
 //   antecessor e o seu sucessor.
 void q6(){
-int maim()
  int num, antecessor, sucessor;
  printf("digite um numero inteiro:");
  scanf("%d",&num);
  antecessor = num - 1;
  sucessor = num + 1;
  printf("antecessor:%d\n", antecessor);
- printf("sucessor: %d\n"sucessor);
+ printf("sucessor: %d\n",sucessor);
 }
 //7. Faça um programa que leia o nome o endereço e o telefone de
 //   um cliente e ao final, imprima esses dados.
+void q7(){
+ char nome [50],endereco [50],telefone[14];
+ printf ("nome:");
+ scanf (" %50[^\n]",&nome);
+ printf ("endereco :");
+ scanf(" %50[^\n]",&endereco);
+ printf("telefone:");
+ scanf(" %14[^\n]",&telefone);
+ printf("%s\n%s\n%s\n", nome, endereco, telefone);
+
+}
 
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
@@ -120,7 +130,7 @@ int maim()
 
 int main() {
 
-q6();
+q7();
 
 return 0;
 
