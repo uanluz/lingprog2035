@@ -115,19 +115,38 @@ void questao05() {
 //bruto. Faça um programa em linguagem C que permita entrar com o salário bruto e o
 //valor da prestação e informar se o empréstimo pode ou não ser concedido.
 void questao06() {
-
+float salbruto, prestacao, porcent;
+  printf("informe o salario bruto: ");
+  scanf("%f",&salbruto);
+  printf("informe o valor da prestacao: ");
+  scanf("%f",&prestacao);
+  porcent = salbruto * 0.30;
+  if (prestacao > porcent){   
+	printf("\nEmprestimo nao pode ser concedido.n\n");
+	}else{
+		printf("\nEmprestimo pode ser concedido");
+		}
 }
 
 //7. Faça um programa que leia um número e indique se o número está compreendido
 //entre 20 e 50 ou não.
 void questao07() {
+int numero;
+printf("digite um numero:");
+scanf("%d",&numero);
+if(numero > 20 &numero < 50){
+    printf("%d esta entre 20 e 50\n",numero);}
+	else{
+		printf("%d nao esta entre 20 e 50\n",numero);
+}
 
 }
 
 //8. Faça um programa que leia um número e imprima uma das mensagens: 
 //"Maior do que 20", "Igual a 20"ou "Menor do que 20".
 void questao08() {
-	
+
+
 }
 
 //9. Faça um programa que permita entrar com o ano de nascimento da pessoa e como ano
@@ -278,7 +297,13 @@ int main() {
 			break;
 		case 5:
 			questao05();
-			break;			
+			break;
+		case 6:
+			questao06();
+			break;     
+        case 7:
+			questao07();
+			break;     
 		case 10:
 			questao10();
 			break;
