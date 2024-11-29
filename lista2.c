@@ -145,7 +145,15 @@ if(numero > 20 &numero < 50){
 //8. Faça um programa que leia um número e imprima uma das mensagens: 
 //"Maior do que 20", "Igual a 20"ou "Menor do que 20".
 void questao08() {
-
+int numero;
+printf("digite um numero: ");
+scanf("%d", &numero);
+if (numero > 20){
+	printf("maior que 20\n");
+}else if (numero == 20) {
+	printf("igual a 20\n");
+} else {
+	printf("menor que 20\n");
 
 }
 
@@ -303,8 +311,11 @@ int main() {
 			break;     
         case 7:
 			questao07();
+			break; 
+        case 8:
+			questao08();
 			break;     
-		case 10:
+        case 10:
 			questao10();
 			break;
 		default:
